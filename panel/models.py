@@ -7,7 +7,7 @@ class Company(models.Model):
     logo     =  models.ImageField(upload_to='uploads/', blank=True)
     website  =  models.URLField(max_length=100)
     class Meta:
-        ordering = ["name"]
+        # ordering = ["name"]
         verbose_name_plural = "Companies"
 
     def __str__(self):
