@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ks@n-91o%)ia0--oazs(4ssgfhld%=g=ay74r8%172l_75dagk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -123,6 +123,8 @@ USE_TZ = True
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'media') 
 MEDIA_URL = '/media/'
 
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 STATIC_URL = '/static/'
 
 # Activate django-heroku

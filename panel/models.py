@@ -4,7 +4,7 @@ from django.db import models
 class Company(models.Model):
     name     =  models.CharField(max_length=60, verbose_name="Company Name * ",                                    blank=False)
     email    =  models.EmailField(max_length=60)
-    logo     =  models.ImageField(upload_to='uploads/', blank=True)
+    logo     =  models.FileField(upload_to='uploads/', blank=True)
     website  =  models.URLField(max_length=100)
     class Meta:
         # ordering = ["name"]
