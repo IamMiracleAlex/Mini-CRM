@@ -36,20 +36,10 @@ urlpatterns = [
 ]   
 
 
-# if settings.DEBUG:
-#         urlpatterns += static(settings.MEDIA_URL,
-#                               document_root=settings.MEDIA_ROOT)
+if settings.DEBUG:
+        urlpatterns += static(settings.MEDIA_URL,
+                              document_root=settings.MEDIA_ROOT)
 
 
 
 
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-
-# router = routers.DefaultRouter()                      # add this
-# router.register(r'posts', views.PostView, 'Crud')     # add this
-        
-# urlpatterns = [
-#     path('admin/', admin.site.urls),           
-#     path('api/', include(router.urls))                # add this
-# ]                              
