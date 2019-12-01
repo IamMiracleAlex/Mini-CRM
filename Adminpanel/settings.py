@@ -26,7 +26,7 @@ SECRET_KEY = 'ks@n-91o%)ia0--oazs(4ssgfhld%=g=ay74r8%172l_75dagk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['light-crm.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['.light-crm.herokuapp.com','localhost']
 
 
 # Application definition
